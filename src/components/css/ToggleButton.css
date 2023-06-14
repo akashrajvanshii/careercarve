@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+.toggle-button {
+    width: 60px;
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    overflow: hidden;
+}
+
+.circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s, background-color 0.3s;
+    border: 1px solid #868686;
+}
+
+.toggle-on {
+    background-color: #e6daff; /* Light purple */
+}
+
+.toggle-off {
+    background-color: #dedede; /* Light grey */
+}
+
+.circle-on {
+    background-color: #8a2be2; /* Darker shade of purple */
+    transform: translateX(28px);
+    border-color: #ccc;
+}
+
+.circle-off {
+    background-color: #969696; /* Dark grey */
+    transform: translateX(0);
+    border-color: #ccc;
+}
+
+.tick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.toggle-off .cross {
+    display: block;
+}
